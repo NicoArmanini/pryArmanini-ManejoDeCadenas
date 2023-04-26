@@ -34,10 +34,10 @@ namespace pryArmanini_ManejoDeCadenas
 
         private void btnComparar_Click(object sender, EventArgs e)
         {
-            TextoA = txtA.Text;
-            TextoB = txtB.Text;
+            lblCantA.Text = TextoA.Length.ToString();
+            lblCantB.Text = TextoB.Length.ToString();
 
-            int resultado = string.Compare(TextoA, TextoB);
+            int resultado = string.Compare(lblCantA.Text, lblCantB.Text);
             if (resultado == 0)
             {
                 MessageBox.Show("El contenido de los textos  es igual");
